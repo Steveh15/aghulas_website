@@ -1,0 +1,74 @@
+        body {
+        padding-top: 56px; /* Offset for fixed navbar */
+        }
+        section {
+        padding: 60px 20px;
+        text-align: center;
+        }
+        section:nth-of-type(odd) {
+/*        background-color: #B9CDDA*/
+        background-color: #F5F1E0
+        }
+        section:nth-of-type(even) {
+/*        background-color: #a6d8d4*/
+          background-color: #A8D0DB
+
+          
+        }
+        .navbar-nav .nav-link {
+        font-size: 1.2rem;
+        }
+
+
+
+
+/* Hero Image Styling */
+/* Remove body padding added by Bootstrap when using fixed-top navbar */
+body {
+    padding-top: 0 !important;
+}
+
+/* Hero Image Styling */
+#home {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background-image: url('images/hero.jpg');
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+}
+
+/* Ensure the text content stays centered in the hero section */
+#home .container {
+    position: relative;
+    z-index: 1;
+    color: white; /* Text color for the hero section */
+}
+
+/* Ensure the modal content takes up more of the screen */
+.modal-dialog {
+    max-width: 80%;  Allow the modal to take up full width 
+    width: auto;
+}
+
+/* Ensure the image resizes within the modal without overflowing */
+.modal-content img {
+    width: 100%; /* Image fills the modal width */
+    height: auto; /* Keep the aspect ratio */
+    max-height: 90vh; /* Ensure it doesn't overflow the vertical height of the screen */
+    object-fit: contain; /* Maintain the aspect ratio */
+}
+
+/* Ensure gallery images are uniform in size */
+.gallery img {
+    width: 100%;         /* Make the images responsive to fill their containers */
+    height: 200px;       /* Set a fixed height for all images */
+    object-fit: cover;   /* Crop the images to fit the container while keeping the aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    margin-bottom: 10px; /* Optional: Add some space between images */
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Holiday Home</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        
+        <!-- Custom Stylesheet -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Henna's House</a>                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Disabled features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#things-to-do">Things to Do</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Sections -->
+        <section id="home" class="hero-section d-flex align-items-center" style="height: 100vh;">
+            <div class="container-fluid text-center">
+                <h1 class="display-4 text-white">Welcome to Henna's House</h1>
+                <p class="lead text-white">Experience disabled friendly accommodation with an uninterupted ocean view.</p>
+                <a href="#about" class="btn btn-primary btn-lg">Learn More</a>
+            </div>
+        </section>
+        <section id="gallery" class="py-5">
+            <div class="container">
+                <h2 class="text-center">Gallery</h2>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <img src="images/main.jpg" class="img-fluid rounded" alt="House Image 1" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="0">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/image2.jpg" class="img-fluid rounded" alt="House Image 2" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="1">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/image3.jpg" class="img-fluid rounded" alt="House Image 3" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="2">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/image4.jpg" class="img-fluid rounded" alt="House Image 4" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="3">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/image5.jpg" class="img-fluid rounded" alt="House Image 5" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="4">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/image6.jpg" class="img-fluid rounded" alt="House Image 6" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="5">
+                    </div>
+                </div>
+            </div>
+            <!-- Modals for enlarged images -->
+            <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div id="carouselGallery" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- First Image -->
+                                <div class="carousel-item active">
+                                    <img src="images/main.jpg" class="d-block w-100" alt="Image 1">
+                                </div>
+                                <!-- Second Image -->
+                                <div class="carousel-item">
+                                    <img src="images/image2.jpg" class="d-block w-100" alt="Image 2">
+                                </div>
+                                <!-- Third Image -->
+                                <div class="carousel-item">
+                                    <img src="images/image3.jpg" class="d-block w-100" alt="Image 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/image4.jpg" class="d-block w-100" alt="Image 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/image5.jpg" class="d-block w-100" alt="Image 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/image6.jpg" class="d-block w-100" alt="Image 6">
+                                </div>
+                                <!-- Add more carousel-item divs for additional images -->
+                            </div>
+                            <!-- Left and right controls (navigation buttons) -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselGallery" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselGallery" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section id="about">
+            <div class="container">
+                <h2>About</h2>
+                <p>
+                    Henna’s House is a fantastic holiday house built especially for wheelchair users and offers exceptional accommodation for those wanting a base to explore the fascinating Overberg region of South Africa. The house is situated in the small holiday town of l’Agulhas close to Cape Agulhas where the Atlantic and Indian oceans meet. L’Agulhas is 2.5 hours drive from Cape Town International Airport and is a first step along the beautiful <a href="http://www.visitgardenrouteandkleinkaroo.com/">Garden Route</a>
+                </p>
+                <p>
+                    Henna’s House, which has an uninterrupted view over the Indian Ocean, has disabled friendly accommodation on one level for six in three bedrooms (double bedroom with on suite and view over the Ocean, one double bedroom with view over the ocean, one twin bedroom). In addition to the one-suite the ground floor has an additional toilet/shower room and a separate guest toilet. There is also a separate self-contained flat for a further two people making spacious accommodation for eight in total. There is also a mezzanine deck level (not accessible for a wheelchair) with a further two single beds. The house has an indoor fireplace for braaing (barbequing) as well as a separate portable outdoor braai.
+                </p>
+                
+            </div>
+        </section>
+    </section>
+    <section id="features">
+        <div class="container">
+        <h2>Disabled features</h2>
+        <ul>
+            <li>Parking space for two cars adjacent to the main double door entrance via a gentle ramp. (Shady parking for more vehicles on the front lawn)</li>
+            <li>Door access widths for power wheelchair</li>
+            <li>Fold down support arm at on-suit toilet</li>
+            <li>All of the showers are roll-in with grab handles, plastic seats and hand showers.</li>
+            <li>Lever action on all taps.</li>
+            <li>Lowered hob and work surface in the kitchen.</li>
+            <li>All light switches are at wheelchair level</li>
+            <li>Spacious main living area with easy ride tiled surfaces.</li>
+            <li>Underfloor heating for winter stays.</li>
+            <li>Sliding doors onto the front patio with of course a panoramic view over the Indian Ocean where you can watch the worlds shipping pass around the southernmost point of Africa.</li>
+            <li>L’Agulhas hosts a number of wheelchair accessible shops, restaurants and cafes which are all a short walk from the house. However the houses is sited about 50 metres above sea level which means that a powered mobility chair or scooter will make life easier for trips into the village.</li>
+        </ul>
+        Be prepared to share Henna’s House with some of l’Agulhas year round residents such as the tortoises that cross the lawn, the myriad bird life that frequent the specially selected flowers and bushes of the nurtured garden, and you may even see the small bok (deer) and pheasants that visit the garden.
+    </div>
+    </section>
+    <section id="things-to-do">
+        <div class="container">
+        <h2>Things to Do</h2>
+        <p>Cape Agulhas is the southern most point of Africa and attracts tourists from all over the world to be photographed at this iconic landmark which is a short disabled friendly board walk from the picturesque lighthouse. Visit the nearby beach resort and fishing harbor of Struisbaai where a special wheelchair can be hired to walk along the longest uninterrupted beach in the Southern Hemisphere or immerse in the warm waters of the Indian Ocean while watching intrepid kit surfers jump the waves. Fish off the harbor breakwater or feed the giant stingrays that frequent the clear waters of the harbor. One in particular has <a href = "http://www.facebook.com/ParrieTheStingray">celebrity status</a>.</p>
+
+        <p>
+        The Overberg region has fantastic scenery with mountain passes, coastal scenery and award winning “sandvelt” vineyards. There is an abundance of places to eat out with all types of seafood being especially bountiful in the region. On your doorstep is the Agulhas National Park which attracts birdwatchers, beach fishers, walkers and cyclists. In just over one hours drive is the <a href = "www.capenature.co.za/reserves/de-hoop-nature-reserve/">De Hoop coastal and lagoon nature reserve</a>. This World Heritage Site is home to over 80 mammal species not least baboons, the rare bontebok and Cape mountain zebra and even leopard. Between July and November from the coastline you can watch the mighty southern wright whales who come inshore to mate and calf. The Overberg also hosts <a href = "https://grgamelodge.co.za/">big-game parks</a> with elephants, giraffe, buffalo and lions.</p>
+    </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Henna’s House can be booked through <a href = "https://www.struisbaai.com/property/hennas-house/">Struisbaai House Rentals</a></p>
+    </section>
+    <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Smooth Scroll JS -->
+    <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+    behavior: 'smooth'
+    });
+    });
+    });
+    // Select all the thumbnails that open the modal
+    document.querySelectorAll('[data-bs-slide-to]').forEach(function (thumbnail) {
+    thumbnail.addEventListener('click', function () {
+    // Get the slide number from the clicked thumbnail
+    const slideIndex = this.getAttribute('data-bs-slide-to');
+    
+    // Select the carousel and set it to the correct slide
+    const carousel = new bootstrap.Carousel(document.getElementById('carouselGallery'));
+    carousel.to(slideIndex);
+    // Show the modal
+    const modal = new bootstrap.Modal(document.getElementById('galleryModal'));
+    modal.show();
+    });
+    });
+    </script>
+</body>
+</html>

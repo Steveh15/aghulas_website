@@ -1,0 +1,4 @@
+// Simple function to show the contact section
+function showContact() {
+    document.getElementById('contactSection').style.display = 'block';
+}
